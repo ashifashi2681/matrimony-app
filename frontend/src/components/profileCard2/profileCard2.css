@@ -1,0 +1,83 @@
+.profile-card2-container {
+	position: relative;
+	border: 6px solid #dd88cf;
+    overflow: hidden;
+    border-radius: 30px;
+    height: 300px;
+
+}
+.card2-gradient {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0) 48%,
+		rgba(126, 39, 111, 0.723) 100%
+	);
+}
+.profile-card2-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.profile-card2-match {
+	position: absolute;
+	top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #dd88cf;
+    padding: 3px 25px;
+    border-radius: 0 0 20px 20px;
+}
+.profile-card2-match span {
+    color: white;
+    font-size: 16px;
+    white-space: nowrap;
+}
+.profile-card2-details {
+	position: absolute;
+	bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 2px; */
+}
+.profile-card2-distance {
+    border: 1px solid rgba(255, 255, 255, 0.699);
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 12px;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    white-space: nowrap;
+}
+.profile-card2-name {
+    position: relative;
+    
+}
+.profile-card2-name > p {
+    margin: 0;
+    font-size: 22px;
+    color: white;
+    white-space: nowrap;
+}
+.card2-status {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -12px;
+    width: 8px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: rgb(5, 218, 5);
+}
+
+.profile-card2-details > p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.692);
+    font-size: 18px;
+    white-space: nowrap;
+}

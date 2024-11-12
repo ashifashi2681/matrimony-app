@@ -1,0 +1,99 @@
+/* Error Page Styles */
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #501950;
+    /* Purple background */
+    color: #fff;
+    /* White text */
+    text-align: center;
+    padding: 20px;
+}
+
+.error-page h1 {
+    font-size: 6rem;
+    color: #f1e4aa;
+    /* Yellow font color */
+    margin: 0;
+}
+
+.error-page h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.error-page p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.error-page .link-container {
+    /* White background */
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 4px solid #ffffff;
+    /* Thicker white border outline */
+    /* White border outline */
+
+}
+
+.error-page .link-text {
+    font-size: 1.2rem;
+    color: #6a1b9a;
+    /* Purple text color for the link */
+    text-decoration: none;
+    /* Remove underline from link */
+    margin-right: 10px;
+}
+
+.error-page .link-text:hover {
+    text-decoration: underline;
+    /* Add underline on hover */
+}
+
+.error-page .link-container span {
+    font-size: 1.2rem;
+    color: #fdfbfe;
+    background-color: transparent;
+    /* Purple text color for the link */
+    margin-right: 10px;
+}
+
+.error-page .arrow-icon {
+    font-size: 1.5rem;
+    color: #f6f4f7;
+    /* Match arrow color to link text */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .error-page h1 {
+        font-size: 2.5rem;
+    }
+
+    .error-page h2 {
+        font-size: 1.5rem;
+    }
+
+    .error-page p {
+        font-size: 1rem;
+    }
+
+    .error-page .link-container {
+        padding: 10px;
+        max-width: 300px;
+    }
+
+    .error-page .arrow-icon {
+        font-size: 1.2rem;
+    }
+}

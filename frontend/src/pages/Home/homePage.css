@@ -1,0 +1,215 @@
+
+/* Full Width Utility */
+.w-full {
+	width: 100%;
+}
+
+/* Main Page Container */
+.mainpage {
+	padding: 10px 20px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #ffffff;
+	/* White background for the header */
+	color: #f6f5f7;
+	/* Light text color */
+	border-radius: 50px;
+	/* Rounded shape */
+	margin: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	display: none;
+}
+
+/* Logo Styles */
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+/* Welcome Banner Styles */
+.welcome-banner {
+	font-size: 3rem;
+	/* Big text size */
+	font-weight: bold;
+	/* Bold text */
+	color: #4a148c;
+	/* Dark purple color */
+	text-align: center;
+	/* Center-align the text */
+	/* padding: 2rem; */
+	/* Add space around the text */
+	margin: 0;
+	/* Remove default margin */
+	/* background: linear-gradient(135deg, #f3e5f5, #e1bee7); */
+	/* Gradient background */
+	border-radius: 10px;
+	/* Rounded corners */
+}
+
+/* Search Bar Styles */
+.search-bar {
+	width: 80%;
+	margin: 10px auto;
+	display: block;
+	padding: 10px;
+	border-radius: 30px;
+	border: 1px solid #d7c2e9;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Tab Bar Container Styles */
+.tab-bar-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px 0;
+}
+
+/* Tab Bar Styles */
+.tab-bar {
+	display: flex;
+	background-color: #f3e5f5;
+	/* Background color for the tab bar */
+	border-radius: 50px;
+	/* Rounded corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	/* Ensure tabs are contained within the rounded corners */
+}
+
+/* Tab Styles */
+.tab {
+	flex: 1;
+	text-align: center;
+	padding: 15px 20px;
+	font-size: 16px;
+	color: #6a1b9a;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	border-radius: 50px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Highlight Tab on Hover */
+.tab:hover,
+.tab:focus,
+.tab:active {
+	background-color: #d7c2e9;
+	/* Background color on hover/active */
+	color: #ffffff;
+	/* Text color on hover/active */
+	outline: none;
+}
+
+/* Active Tab Styles */
+.tab-bar .tab.active {
+	background-color: #d7c2e9;
+	/* Active state color */
+	color: #ffffff;
+	/* Active state text color */
+}
+
+/* Featured Profiles, Activity Feed, and Match Suggestions Styles */
+.featured-profiles,
+.activity-feed,
+.match-suggestions {
+	margin: 40px 0;
+}
+
+/* Grid Layout Styles */
+.grid {
+	display: grid;
+	gap: 10px;
+}
+
+/* Feed Item Styles */
+.feed-item {
+	padding: 10px;
+	border-bottom: 1px solid #ece6f6;
+}
+
+.feed-item p {
+	margin: 0;
+}
+
+/* Activity Feed Specific Styles */
+.activity-feed {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	background: transparent;
+	/* No background for the container */
+	border-radius: 10px;
+}
+
+.activity-feed h2 {
+	font-size: 3reem;
+	color: #6a1b9a;
+	margin-bottom: 1rem;
+}
+
+.activity-feed .feed-item {
+	width: 100%;
+	max-width: 600px;
+	margin-bottom: 1rem;
+	padding: 3rem;
+	/* White background for each feed item */
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-feed .feed-item:last-child {
+	margin-bottom: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1023px) {
+	.mainpage {
+		padding: 15px 15px;
+	}
+
+	.welcome-banner {
+		/* padding: 1rem; */
+	}
+	.tab {
+		padding: 13px 18px;
+		font-size: 14px;
+		border-radius: 50px;
+	}
+}
+
+@media (max-width: 767px) {
+	.header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.header .icons {
+		margin-top: 10px;
+	}
+	.mainpage {
+		padding: 0.5rem;
+	}
+
+	.welcome-banner {
+		padding-top: 3rem;
+	}
+
+	/* Ensure tab bar layout remains unchanged in mobile view */
+	.tab-bar {
+		flex-direction: row;
+		/* Maintain layout */
+	}
+
+	.tab {
+		padding: 15px 20px;
+		/* Consistent padding */
+	}
+}

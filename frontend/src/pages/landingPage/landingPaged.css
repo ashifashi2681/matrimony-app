@@ -1,0 +1,124 @@
+.landing-section {
+	display: grid;
+	place-content: center;
+	height: 100vh;
+}
+.landing {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50vw;
+	padding: 40px 50px;
+	/* border: 1px solid #4b164c; */
+	border-radius: 5px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	background: white;
+}
+.landing-img {
+	width: 20vw;
+}
+.landing-img img {
+	width: 100%;
+	height: 100%;
+}
+.landing-details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+.landing-details > h4 {
+	font-size: var(--text-xxl);
+	font-weight: 500;
+}
+.auth-section {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.login-with-phone {
+	border: none;
+	background: #4b164c;
+	color: white;
+	font-size: var(--text-sm);
+	font-weight: 400;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	gap: 10px;
+	border-radius: 50px;
+	padding: 5px 20px 5px 5px;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.login-with-phone > span {
+	background: white;
+	color: #4b164c;
+	display: flex;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+.login-with-google {
+	border: none;
+	background: #fcf4fb;
+	color: 4b164c;
+	font-size: var(--text-sm);
+	font-weight: 400;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	gap: 10px;
+	border-radius: 50px;
+	padding: 5px 20px 5px 5px;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.login-with-google > span {
+	background: white;
+	color: #4b164c;
+	display: flex;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+.landing-details > p {
+	font-size: var(--text-sm);
+	font-weight: 400;
+	color: #4b164c;
+}
+
+.landing-details > p > a {
+	color: #dd88cf;
+	text-decoration: none;
+}
+
+@media (max-width: 1023px) {
+	.landing {
+		width: 70vw;
+	}
+}
+@media (max-width: 767px) {
+	.landing-img {
+		width: 25vw;
+	}
+	.auth-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+}
+@media (max-width: 639px) {
+	.landing-img {
+		width: 45vw;
+	}
+	.landing {
+		width: 90vw;
+		padding: 30px 30px;
+	}
+}

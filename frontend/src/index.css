@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Aldrich", sans-serif;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* right sidbar accordian css */
+
+.glassmorhism-panel {
+	backdrop-filter: blur(8px) saturate(0%);
+	-webkit-backdrop-filter: blur(8px) saturate(0%);
+	background-color: rgba(75, 22, 76, 0.93);
+}
+
+.custom-gradient {
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0) 48%,
+		rgba(126, 39, 111, 0.723) 100%
+	);
+}
+
+.custom-gradient2 {
+	background: linear-gradient(180deg, rgba(255,255,255,0) 48%, rgba(100,48,82,1) 86%);
+
+
+}
+
+.corner-shadow {
+	box-shadow: 0px -10px 0px 8px #4b164c;
+}
+
+@media (min-width: 768px) {
+	.close {
+		max-height: 0;
+		transition: max-height 0.4s ease-in-out;
+	}
+	.open {
+		max-height: 1000px;
+		transition: max-height 0.5s ease-in-out;
+	}
+}
+
+@media (max-width: 767px) {
+	.menu-close {
+		max-height: 0;
+		/* transition: max-height 0.4s ease-in-out; */
+	}
+	.menu-open {
+		max-height: 1000px;
+		/* transition: max-height 0.5s ease-in-out; */
+	}
+}

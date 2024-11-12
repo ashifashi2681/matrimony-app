@@ -1,0 +1,177 @@
+.viewedmyprofile-container {
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #6f0e6f;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    justify-content: center;
+}
+
+.search-icon {
+    font-size: 2rem;
+    color: #e8acd7;
+    /* Default icon color */
+    background-color: transparent;
+    /* Remove background color */
+    border: none;
+    /* Remove border */
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #6f0e6f;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+.user-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.user-bio {
+    color: #666;
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Space out items with the right-aligned icons */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    /* Positioning for the right-aligned icons */
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.heart-icon {
+    color: red;
+    /* Customize the color of the heart icon */
+}
+
+.close-icon {
+    color: black;
+    /* Customize the color of the close icon */
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.navigation button {
+    background-color: #6f0e6f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navigation button:hover {
+    background-color: #5a0c5a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+    .search-icon {
+        font-size: 1.5rem;
+        left: 15px;
+    }
+
+    .header-title {
+        font-size: 1.25rem;
+    }
+
+    .user-card {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .profile-pic {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .icon-container {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 10px;
+    }
+
+    .search-icon {
+        font-size: 1.2rem;
+        left: 10px;
+    }
+
+    .header-title {
+        font-size: 1rem;
+    }
+
+    .icon-container {
+        gap: 8px;
+    }
+}

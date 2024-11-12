@@ -1,0 +1,80 @@
+/* Base styles for Sent Requests Page */
+.reject-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-icon {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Letter group styling */
+.letter-group {
+    margin-top: 20px;
+}
+
+.letter-heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* User card styling */
+.user-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.user-card:last-child {
+    border-bottom: none;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* Makes the profile picture circular */
+    object-fit: cover;
+}
+
+.user-info {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.user-bio {
+    color: #666;
+}
+
+/* Close icon styling */
+.close-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #333;
+}

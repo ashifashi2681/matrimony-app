@@ -1,0 +1,109 @@
+.job-role-container {
+	backdrop-filter: blur(8px);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-content: center;
+}
+.job-role {
+	background: rgb(255, 255, 255);
+	padding: 20px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+		rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+	border-radius: 5px;
+	border: 1px solid #d9d9d9;
+	width: 400px;
+}
+.job-role > p {
+	text-align: center;
+	font-size: var(--text-lg);
+	font-weight: 600;
+	color: #4b164c;
+	margin-bottom: 10px;
+}
+
+.job-role .form-container {
+	display: flex;
+	flex-direction: column;
+}
+.job-role .form-container > label {
+	font-size: var(--text-sm);
+	font-weight: 100;
+	color: rgb(77, 77, 77);
+}
+.job-role .form-container > input {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #d9d9d9;
+	margin-block: 8px;
+	font-size: var(--text-sm);
+	font-weight: 400;
+	color: black;
+	outline: none;
+}
+
+.job-role .form-container input::placeholder {
+	color: #b4b4b4;
+}
+
+
+.job-role .select-container{
+    width: 100%;
+}
+
+.job-role .select-container button {
+    width: 100%;
+    padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #d9d9d9;
+    margin-top: 8px;
+    font-size: var(--text-base);
+    font-weight: 400;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.job-role .options{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s linear;
+}
+.job-role .options.active {
+    max-height: 500px;
+
+}
+.job-role .option{
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #d9d9d9;
+    margin-block: 8px;
+    font-size: var(--text-sm);
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.671);
+    cursor: pointer;
+}
+
+.job-role .form-btns {
+	margin-block: 10px;
+}
+
+.job-role .form-btns button {
+	border: none;
+	color: white;
+	background-color: #2c2c2c;
+	font-size: var(--text-sm);
+	font-weight: 400;
+	width: 100%;
+	border-radius: 5px;
+	padding: 12px;
+	white-space: nowrap;
+	cursor: pointer;
+}
